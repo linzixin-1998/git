@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/SanD.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部 -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>SanD</li>
+                <li>Subtitle</li>
+                <li>SanD</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="cut-f-content">
+            <div class="SanD">
+                <div class="SanD-img">
+                    <img src="../imgs/img7.svg"/>
+                     <div class="progress">
+                        <img src="../imgs/icon62.svg" />
+                        <img src="../imgs/icon63.svg" />
+                        <img src="../imgs/icon64.svg" />
+                        <div class="scroll" id="scroll">
+                            <div class="bar" id="bar">
+                            </div>
+                            <div class="mask" id="mask"></div>
+                        </div>
+                        <img src="../imgs/icon67.svg" />
+                        <div class="scroll scroll2" id="scroll">
+                            <div class="bar" id="bar">
+                            </div>
+                            <div class="mask" id="mask"></div>
+                        </div>
+                        <img src="../imgs/icon69.svg" />
+                    </div>
+                </div>
+                <div class="SanD-oper">
+                    <div class="SanD-one">
+                       <p>
+                           <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                           <span>Enable 3D Settings</span>
+                       </p>
+                    </div>
+                    <div class="SanD-two">
+                        <p>
+                            <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                            <span>Anaglyph</span>
+                        </p>
+                        <ul class="drop-box">
+                            <li class="dropbtn">Red/cyan anaglyph, monochrom</li>
+                            <ul class="dropdown-content">
+                              <li>Red/cyan anaglyph, monochrom</li>
+                              <li>Red/cyan anaglyph, half color</li>
+                              <li>Red/cyan anaglyph, full color</li>
+                              <li>Red/cyan anaglyph, high quality Dubois</li>
+                              <li>Green/magenta anaglyph, monochrome</li>
+                              <li>Green/magenta anaglyph, half color </li>
+                              <li>Green/magenta anaglyph, full color</li>
+                              <li>Amber/blue anaglyph, monochrome</li>
+                              <li>Amber/blue anaglyph, half color </li>
+                              <li>Amber/blue anaglyph, full color </li>
+
+                            </ul >
+                        </ul>
+                    </div>
+                    <div class="SanD-three">
+                        <p>
+                            <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                            <span>Split Screen</span>
+                        </p>
+                        <div class="SanD-three-second">
+                            <p>
+                                <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                                <span>Side by Side (Half - Width)</span>
+                            </p>
+                            <p>
+                                <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                                <span>Side by Side (Full)</span>
+                            </p>
+                            <p>
+                                <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                                <span>Top and Bottom (Half - Height)</span>
+                            </p>
+                            <p>
+                                <img onclick="selectAll(event)" src="../imgs/icon74.svg" />
+                                <span>Top and Bottom (Full)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="SanD-four">
+                        <p>
+                            <span>Depth:   1 / 15</span>
+                        </p>
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                        <div class="switch"><span>Switch Left Right:</span><img onclick="selectAll(event)" src="../imgs/icon13.png"/></div>
+                        <div class="button1 res" >Reset</div>
+                        <div class="button1 all">Apply to All</div>
+                    </div>
+                   
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+    <script src="../js/view/Components.js"></script>
+    <script src="../js/view/convert.js"></script>
+</body>
+</html>

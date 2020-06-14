@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/cut.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+</head>
+<body>
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+    <div class="cut">
+    <div class="cut-head">Cut - 52521288_410444059716659_8215115458324_n.mp4</div>
+    <div class="cut-content">
+        <div class="cut-content-video">
+            <img src="../imgs/img4.png"/>
+        </div>
+        <div class="cut-content-videofoot">
+            <div class="video-bar">
+                <img src="../imgs/icon52.svg" />
+                <img src="../imgs/icon53.svg" />
+                <img src="../imgs/icon54.svg" />
+                <div class="scroll" id="scroll">
+                    <div class="bar" id="bar">
+                    </div>
+                    <div class="mask" id="mask"></div>
+                </div>
+                <img src="../imgs/icon70.svg" />
+                <div class="scroll scroll2" id="scroll">
+                    <div class="bar" id="bar">
+                    </div>
+                    <div class="mask" id="mask"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cut-content-oper">
+    
+                <div class="timeAdd">
+                    <span  id="time">00:00:04</span>
+                    
+                    <img onclick="T(event)" id="reduce" class="reduce" src="../imgs/icon10.png"/>
+                    <img onclick="T(event)" class="add" id="add" src="../imgs/icon52.png"/>
+                </div>
+
+            
+            <div>/ 00:00:16</div>
+            <div>Time interval :</div>
+            <img src="../imgs/icon48.png" />
+            <img src="../imgs/icon49.png" />
+            <img src="../imgs/icon50.png" />
+            <div class="button1">Reset</div>
+            <div class="button1">Delete</div>
+            <div class="button1">Cut</div>
+            
+        </div>
+        <div class="cut-content-time"></div>
+    </div>
+    <div class="cut-foot">
+        <div class="all">Merge All Segments : 
+            <img onclick="selectAll(event)" src="../imgs/icon13.png" />
+
+        </div>
+        <div class="button1 ">Cancel</div>
+        <div class="button2">Cancel</div>
+    </div>
+</div>
+<script src="../js/view/convert.js"></script>
+<script src="../js/view/Components.js"></script>
+</body>
+</html>

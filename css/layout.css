@@ -1,0 +1,36 @@
+body {
+    --content-title: #79B1F2;
+    --content-text: #7A9ACC;
+    --hover: rgb(230, 225, 225);
+    --btn-bgc: #F2F7FC;
+    --btn-bgc-hover: #79B1F2;
+    --white: #FFFFFF;
+    --video-bgc: #E6EFF9;
+    --videoImg-bgc:#CFE0F3;
+    --video-color:#71757C;
+    --text-color:#898C93;
+    --text2-color:#A8ABB3;
+    --text3-color:#7A9ACC;
+    --jb-bgc1:#D8C0FC;
+    --jb-bgc2:#98A9F9;
+    --head-bgc:#F3F9FF;
+    --border-color:#DFE5EA;
+    --div-bgc:#E1ECF8;
+    --div-bgc2:#CCCCFF;
+    --Scroll-bgc1:#A1C4FD;
+    --Scroll-bgc2:#DDE3E8;
+    /* 边框圆角 */
+    --border-radius:5px;
+    --border-radius2:10px;
+
+
+    /* 字体大小 */
+    --size1:12px;
+    --size2:14px;
+    --size3:16px;
+    --size4:26px;
+    --size5:18px;
+
+}
+
+

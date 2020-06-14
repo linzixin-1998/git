@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/Components.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/Subtitle.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部tab -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>Watermaket</li>
+                <li>Subtitle</li>
+                <li>Audio</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!-- 内容区  -->
+        <div class="cut-f-content">
+            <div class="Subtitle">
+                <!-- 中间的左边图片区 -->
+                <div class="Subtitle-img">
+                    <p>Original Preview</p>
+                    <div><img src="../imgs/img7.svg" /></div>
+                    
+                    <p>Output Preview</p>
+                    <div>
+                        <img src="../imgs/img8.svg" />
+                        <div class="progress">
+                            <img src="../imgs/icon62.svg" />
+                            <img src="../imgs/icon63.svg" />
+                            <img src="../imgs/icon64.svg" />
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon67.svg" />
+                            <div class="scroll scroll2" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon69.svg" />
+                        </div>
+                    </div>
+                    
+                </div>
+                 <!-- 中间的右边操作区 -->
+                <div class="Subtitle-oper">
+                    <!-- 右边第一行 -->
+                    <div class="Subtitle-one">
+                             
+                            <div>Subtitle:<div><img class="icon" src="../imgs/icon75.svg" /></div><input type="text" value="None" /></div>
+                            <div>Font:<div><img class="icon" src="../imgs/icon76.svg" /></div><input type="text" value="Arial" /></div>
+                            <div>Font Color:<div><img class="icon" src="../imgs/icon77.svg" /></div><input type="text"  /></div>
+                            <div>Font Size:<div></div>
+                            <div class="timeAdd">
+                                <span  id="time">00:00:04</span>
+                                <img onclick="T(event)" id="reduce" class="reduce" src="../imgs/icon10.png"/>
+                                <img onclick="T(event)" class="add" id="add" src="../imgs/icon52.png"/>
+                            </div>
+                            </div>
+                            <div>Font Style:<div></div><input type="text" value="Italic"/></div>
+                    </div>
+                     <!-- 右边第二行 -->
+                    <div class="Subtitle-two">
+                        <p>Transparency:   <span>80 / 100</span></p>
+                        <!-- 进度条 -->
+                        <div class="scroll" id="scroll">
+                            <div class="bar" id="bar">
+                            </div>
+                            <div class="mask" id="mask"></div>
+                        </div>
+                    </div>
+                    <!-- 右边第三行 -->
+                    <div class="Subtitle-three">
+                        <p>Position:   <span>80 / 100</span></p>
+                        <div class="tab-bal" id="tab-bal">
+                            <div>Top</div>
+                            <div class="tab-bal-onclink">Middle</div>
+                            <div>Bottom</div>
+                        </div>
+                        <!-- 进度条 -->
+                        <div class="scroll" id="scroll">
+                            <div class="bar" id="bar">
+                            </div>
+                            <div class="mask" id="mask"></div>
+                        </div>
+                        <div class="button1">Reset</div>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+        <!-- 底部按钮区 -->
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+    <script src="../js/view/convert.js"></script>
+    <script src="../js/view/Subtitle.js"></script>
+    <script src="../js/view/Components.js"></script>
+</body>
+</html>

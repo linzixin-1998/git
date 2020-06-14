@@ -1,0 +1,272 @@
+
+body,html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+}
+
+
+.cut-f{
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-app-region: drag; 
+    justify-content: space-around;
+}
+
+/* 头部 */
+.cut-f-head{
+    height: 50px;
+    width: 100%;
+}
+.cut-f-head ul{
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    font-size: var(--size3);
+}
+.cut-f-head li{
+    flex: 1;
+    line-height: 50px;
+    text-align: center;
+    font-size: var(size3);
+    color: var(--content-title);
+}
+
+
+/* 内容 */
+.cut-f-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bgc);
+
+}
+.cut-f-content .Audio{
+    display: flex;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    font-size: var(--size2);
+}
+/* 中间 右边图片区 */
+.Audio-img{
+    width: 430px;
+    margin-right: 30px;
+}
+
+.Audio-img p{
+    margin: 5px 0;
+    font-size: var(--size2);
+    color: var(--text-color);
+}
+.Audio-img > div{
+    width: 100%;
+    height: 240px;
+    background-color: var(--videoImg-bgc);
+    text-align: center;
+}
+
+
+.Audio-img > div .progress{
+    height: 20px;
+    width: 100%;
+    background-color: var(--btn-bgc);
+    vertical-align: center;
+}
+
+.Audio-img > div .progress img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.Audio-img > div .progress img:nth-child(2){
+    width: 15px;
+}
+.progress .scroll{
+    width: 220px;
+    height: 3px;
+    background-color: var(--Scroll-bgc2);
+}
+
+.progress .scroll .bar{
+    background: url(../imgs/icon66.png) no-repeat center;
+    bottom: -8px;
+}
+.Audio-img > div .progress img:nth-child(7){
+    width: 15px;
+}
+.progress .scroll .mask{
+    height: 3px;
+    background-color: var(--Scroll-bgc1);
+}
+.Audio-img > div .progress .scroll2{
+    width: 50px;
+    height: 3px;
+}
+
+
+.Audio-img > div .progress img:nth-child(6){
+    width: 15px;
+}
+.Audio-img > div > img{
+    height: 100%;
+}
+
+/* 左边操作区 */
+.Audio-oper{
+    width: 362px;
+}
+
+.Audio-oper > div{
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: size3;
+    color: var(--video-color);
+}
+ 
+.Audio-oper > div > input{
+    height: 30px;
+    width: 280px;
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    color: var(--text-color);
+    font-size: var(--size3);
+}
+/* 左边第一行 */
+.Audio-oper {
+    margin-top: 30px;
+    height: 510px;
+
+}
+.Audio-oper > .Audio-one{
+    height: 70px;
+}
+.Audio-one > div:nth-child(1){
+    margin-top: 20px;
+}
+.Audio-one > div{
+    margin: 0px;
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+    text-align: right;
+    margin-bottom: 10px;
+    line-height: 30px;
+    color: var(--video-color);
+
+}
+.Audio-one > div > div{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    margin-left: 10px;
+    float: right;
+    border: none;
+    text-align: center;
+}
+.Audio-one img{
+    height: 15px;
+    width: 15px;
+    margin-top: 8px;
+}
+.Audio-one > div > input{
+    height: 30px;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: var(--size3);
+    color: var(--text-color);
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    float: right;
+    margin-left: 10px;
+    -webkit-app-region: no-drag; 
+}
+/* 左边第二行 */
+.Audio-oper .Audio-two{
+    height: 435px;
+    position: relative;
+}
+
+.Audio-two .scroll{
+    width: 322px;
+    height: 4px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color:var(--Scroll-bgc2);
+
+    -webkit-app-region: no-drag; 
+}
+
+.scroll .bar{
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    bottom: -8px;
+    background: url(../imgs/icon66.png) no-repeat center;
+}
+.scroll .mask{
+    height: 4px;
+    background-color: var(--Scroll-bgc1);
+}
+
+.Audio-two p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.Audio-two .button1{
+    background-color: var(--content-title);
+    width: 120px;
+    height: 35px;
+    color: var(--white);
+    position: absolute;
+    bottom: 20px;
+    font-size: var(--size3);
+}
+.res{
+    right: 150px;
+}
+.all{
+    right: 20px;
+}
+
+/* 底部 */
+.cut-f-foot{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--white);
+}
+
+.cut-f-foot .button1{
+    display: inline-block;
+    font-size: var(--size3);
+    height: 35px;
+    width: 120px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+    -webkit-app-region: no-drag; 
+}
+
+.cut-f-foot .button1:nth-child(3){
+    background-image: linear-gradient(var(--jb-bgc1), var(--jb-bgc2));
+    margin-right: 30px;
+}

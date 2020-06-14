@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/convert.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+</head>
+<body>
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <!-- 头部 -->
+    <div class="head">
+        <div>
+            <span>Video Converter Ultimate (Unregistered)</span>
+            <span class="right">
+                Unregistered
+                <img src="../imgs/icon6.png">
+                <img src="../imgs/icon7.png">
+            </span>
+        </div>
+        <div class="head-select">
+            <div class="head-select-left">
+                <div><img src="../imgs/icon8.png">Back</div>
+                <div><img src="../imgs/icon9.png">Add Files<img src="../imgs/icon10.png"></div>
+                <div><img src="../imgs/icon8.png">Load DVD <img src="../imgs/icon10.png"></div>
+            </div>
+            <div class="head-select-center">
+                <div >Converting</div>
+                <div>Converted</div>
+            </div>
+            <div class="head-select-right">
+               <span> Convert all tasks to:</span>
+                <!-- <select class="select">
+                    <option value="MP4">MP4</option>
+                    <option value="MP4">MP4</option>
+                    <option value="MP4">MP4</option>
+                    </select> -->
+                    <ul class="drop-box">
+                        <li class="dropbtn">MP4</li>
+                        <ul class="dropdown-content">
+                          <li>MP4</li>
+                          <li>MP4</li>
+                        </ul >
+                      </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+        <!-- 未添加视频 -->
+        <div class="empty">
+            <img src="../imgs/icon12.png">
+            <p>Add or Drag files here to start conversion</p>
+        </div>
+
+        <!-- 添加视频 -->
+        <div class="videoList">
+            <!-- 视频item项1背景 -->
+            <div class="item">
+                <div class="itemSelect"></div>
+                <div class="videoItem">
+                    <!-- 视频图片 -->
+                    <div class="videoItem-video">
+                        <img src="../imgs/img1.png" />
+                    </div>
+                    <!-- 视频信息 -->
+                    <div class="videoItem-operation">
+                        <div class="videoName">52521288_410444059716659_8215115458324_n</div>
+                        <div class="videoSource">
+                            <div class="videoSource-S">
+                                <div>Source</div>
+                                <div>
+                                    <img src="../imgs/icon17.png" />
+                                    <span>MP4</span>
+                                    <img src="../imgs/icon18.png" />
+                                    <span>00:00:18</span>
+                                    <img src="../imgs/icon19.png" />
+                                    <span>401.4KB</span>
+                                    <img src="../imgs/icon20.png" />
+                                    <span>640*480</span>
+                                </div>
+                            </div>
+                            <div class="videoSource-icon"><img src="../imgs/icon16.png" /></div>
+                            <div class="videoSource-S">
+                                <div>Target</div>
+                                <div>
+                                    <img src="../imgs/icon17.png" />
+                                    <span>MP4</span>
+                                    <img src="../imgs/icon18.png" />
+                                    <span>00:00:18</span>
+                                    <img src="../imgs/icon19.png" />
+                                    <span>401.4KB</span>
+                                    <img src="../imgs/icon20.png" />
+                                    <span>640*480</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoSelect">
+                            <span class="fonsize">Audio:</span>
+                            <select class="select2">
+                                <option value="MP4">AAC,Stereo</option>
+                                <option value="MP4">AAC,Stereo</option>
+                                <option value="MP4">AAC,Stereo</option>
+                                </select>
+                            <span class="fonsize">Subtitle:</span><select class="select2">
+                                <option value="MP4">No Subtitle</option>
+                                <option value="MP4">No Subtitle</option>
+                                <option value="MP4">No Subtitle</option>
+                                </select>
+                            <span class="fonsize">Convert:</span><select class="select2">
+                                <option value="MP4">MP4</option>
+                                <option value="MP4">MP4</option>
+                                <option value="MP4">MP4</option>
+                                </select>
+                            <span class="videoSelect-right"><img src="../imgs/icon22.png" /><img src="../imgs/icon21.png" /></span>
+                        </div>
+                        <div class="videoOper">
+
+                            <img src="../imgs/icon23.png" />
+                            <span>Cut</span>
+                            <img src="../imgs/icon24.png" />
+                            <span>Crop</span>
+                            <img src="../imgs/icon25.png" />
+                            <span>Subtitle</span>
+                            <img src="../imgs/icon26.png" />
+                            <span>Effect</span>
+                            <img src="../imgs/icon27.png" />
+                            <span>Rotate</span>
+                            <img src="../imgs/icon28.png" />
+                            <span>Watermaket</span>
+                            <img src="../imgs/icon29.png" />
+                            <span>Screenshot</span>
+                            <img src="../imgs/icon30.png" />
+                            <span>Audio</span>
+                            <img src="../imgs/icon31.png" />
+                            <span>Enhance</span>
+                            <img src="../imgs/icon32.png" />
+                            <span>3D</span>
+                        </div>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="videoItem-btn">Convert</div>
+                    <!-- 右上角关闭图标 -->
+                    <img class="close" src="../imgs/icon15.png">
+                </div>
+            </div>
+            <!-- 视频item项2背景 -->
+            <div class="item">
+                <div class="itemSelect"></div>
+                <div class="videoItem videoItem-bgc-2">
+                    <!-- 视频图片 -->
+                    <div class="videoItem-video">
+                        <img src="../imgs/img2.png" />
+                    </div>
+                    <!-- 视频信息 -->
+                    <div class="videoItem-operation">
+                        <div class="videoName">52521288_410444059716659_8215115458324_n</div>
+                        <div class="videoSource">
+                            <div class="videoSource-S">
+                                <div>Source</div>
+                                <div>
+                                    <img src="../imgs/icon17.png" />
+                                    <span>MP4</span>
+                                    <img src="../imgs/icon18.png" />
+                                    <span>00:00:18</span>
+                                    <img src="../imgs/icon19.png" />
+                                    <span>401.4KB</span>
+                                    <img src="../imgs/icon20.png" />
+                                    <span>640*480</span>
+                                </div>
+                            </div>
+                            <div class="videoSource-icon"><img src="../imgs/icon16.png" /></div>
+                            <div class="videoSource-S">
+                                <div>Target</div>
+                                <div>
+                                    <img src="../imgs/icon17.png" />
+                                    <span>MP4</span>
+                                    <img src="../imgs/icon18.png" />
+                                    <span>00:00:18</span>
+                                    <img src="../imgs/icon19.png" />
+                                    <span>401.4KB</span>
+                                    <img src="../imgs/icon20.png" />
+                                    <span>640*480</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="videoSelect">
+                            <span class="fonsize">Audio:</span>
+                            <select class="select2">
+                                <option value="MP4">AAC,Stereo</option>
+                                <option value="MP4">AAC,Stereo</option>
+                                <option value="MP4">AAC,Stereo</option>
+                                </select>
+                            <span class="fonsize">Subtitle:</span><select class="select2">
+                                <option value="MP4">No Subtitle</option>
+                                <option value="MP4">No Subtitle</option>
+                                <option value="MP4">No Subtitle</option>
+                                </select>
+                            <span class="fonsize">Convert:</span><select class="select2">
+                                <option value="MP4">MP4</option>
+                                <option value="MP4">MP4</option>
+                                <option value="MP4">MP4</option>
+                                </select>
+                            <span class="videoSelect-right"><img src="../imgs/icon22.png" /><img src="../imgs/icon21.png" /></span>
+                        </div>
+                        <div class="videoOper">
+
+                            <img src="../imgs/icon23.png" />
+                            <span>Cut</span>
+                            <img src="../imgs/icon24.png" />
+                            <span>Crop</span>
+                            <img src="../imgs/icon25.png" />
+                            <span>Subtitle</span>
+                            <img src="../imgs/icon26.png" />
+                            <span>Effect</span>
+                            <img src="../imgs/icon27.png" />
+                            <span>Rotate</span>
+                            <img src="../imgs/icon28.png" />
+                            <span>Watermaket</span>
+                            <img src="../imgs/icon29.png" />
+                            <span>Screenshot</span>
+                            <img src="../imgs/icon30.png" />
+                            <span>Audio</span>
+                            <img src="../imgs/icon31.png" />
+                            <span>Enhance</span>
+                            <img src="../imgs/icon32.png" />
+                            <span>3D</span>
+                        </div>
+                    </div>
+                    <!-- 按钮 -->
+                    <div class="videoItem-btn">Convert</div>
+                    <!-- 右上角关闭图标 -->
+                    <img class="close" src="../imgs/icon15.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+        <div class="foot-left">
+            <div>Output:</div>
+            <!-- <div>Converted</div> -->
+            <input class="Output" value="Converted" />
+            <div class="button1 foot-btn">Browse</div>
+            <div class="button1 foot-btn">Open Folder</div>
+        </div>
+        <div class="foot-right">
+            <div>Select All:</div>
+            <div><img onclick="selectAll(event)" src="../imgs/icon14.png" /></div>
+            <div>Merge Videos:</div>
+            <div><img src="../imgs/icon13.png" onclick="selectAll(event)" /></div>
+            <div class="foot-btn2">Convert All</div>
+        </div>
+    </div>
+    <script src="../js/view/convert.js"></script>
+</body>
+
+</html>

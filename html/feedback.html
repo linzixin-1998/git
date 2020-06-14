@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/register.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="head">
+        <div class="head-box">
+            <div class="head-title" id="feedback">Feedback</div>
+            <div>
+                <button class="head-btn btn-close"></button>
+            </div>
+        </div>
+    </div>
+    <div class="reg-box feedback">
+        <form id="feedback-form">
+            <p id="thanks">Thanks for your feedback.</p>
+            <div>
+                <label for="email" id="text-em">Email</label>
+                <input id="email" type="text" class="input" name="email" />
+                <input id="userID" type="hidden" class="input" name="userID" />
+            </div>
+            <div>
+                <label for="content" id="text-con">Content</label>
+                <textarea id="content" class="input" name="content"></textarea>
+            </div>
+            <div class="check-box attach" data-b="-1">
+                <input id="file" type="hidden" name="file"/>
+                <span class="select-btn"><span class="subtext" id="attach">Attach the log file<span>log.log</span></span></span>
+            </div>
+
+            <!--<button class="btn btn-later">Add attachment</button>-->
+            <button id="btn-submit" type="button" class="btn btn-dl btn-grey btn-submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="../js/view/layout.js"></script>
+<script src="../js/controller/layout.js"></script>
+<script src="../js/view/feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+
+div{
+    margin: 0;
+}
+/* 蓝色按钮 */
+.button1{
+    width: 120px;
+    height: 35px;
+    font-size: var(--size3);
+    line-height: 35px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--content-title);
+    border-radius:  var(--border-radius);
+}
+
+
+
+/* 渐变颜色按钮 */
+.button2{
+    width: 120px;
+    height: 35px;
+    font-size: var(--size3);
+    line-height: 35px;
+    color: var(--white);
+    text-align: center;
+    background-image: linear-gradient(var(--jb-bgc1), var(--jb-bgc2));
+    border-radius:  var(--border-radius);
+}
+
+
+/* 下拉框 */
+/* .pullDown1{
+    height: 30px;
+    width: 130px;
+    line-height: 30px;
+    text-align: left;
+    border-radius: var(--border-radius);
+    padding: 0 10px;
+    margin-left: 10px;
+    background:var(--div-bgc) url(../imgs/icon10.png) no-repeat;
+    background-position-x: 130px;
+    background-position-y: center;
+} */
+
+
+
+
+/* 表格 */
+.table1{
+    width: 520px;
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+.table1 caption{
+    text-align: left;
+    font-size: var(--size3);
+}
+.table1 caption img{
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+}
+.table1 tr td{
+    width: 50%;
+    line-height: 30px;
+}
+
+.setting-content .table1:nth-child(2){
+    border-top:1px solid var(--border-color);
+}
+/* .table1 tr td div{
+    float: right;
+} */
+.table1 tr td .select{
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    background-color:   var(--div-bgc);
+    border-radius: var(--border-radius);
+    padding: 0 10px;
+    margin-left: 20px;
+    color: var(--content-text);
+    font-size: var(--size2);
+    outline: none;
+    border: none;
+    float: right;
+}
+
+
+.table1 tr td .drop-box{
+    width: 130px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: var(--border-radius);
+    padding: 0 10px;
+    margin-left: 20px;
+    color: var(--content-text);
+    font-size: var(--size2);
+    text-align: left;
+    margin: 0;
+    background: var(--div-bgc) url(../imgs/icon10.png) no-repeat;
+    background-position-x: 130px; 
+    background-position-y: center;
+}
+
+.table1 tr td .drop-box .dropdown-content {
+    position: absolute;
+    color: var(--text-color);
+    right: 10px;
+    font-size: var(--size2);
+    margin: 0;
+    padding: 0;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    left: 0;
+    z-index: 200;
+}
+/* 窗口头部 */
+.windowHead{
+    -webkit-app-region: drag; 
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--white);
+    z-index: 200;
+}
+.pageIcon{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    -webkit-app-region: no-drag; 
+}
+
+
+/* 进度条 */
+.scroll{
+    width: 260px;
+    height: 2px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background: var(--videoImg-bgc);
+    position: relative;
+    -webkit-app-region: no-drag; 
+}
+.bar{
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    cursor: pointer;
+    background: url(../imgs/icon60.png) no-repeat center;
+}
+.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--white);
+    width: 50%;
+    height: 2px;
+}
+
+
+/* 时间加减控件 */
+
+
+
+
+
+
+/* 下拉框 */
+ul{
+    list-style: none;
+    display: inline-block;
+}
+.drop-box {
+font-size: 16px;
+color: var(--text-color);
+border: none;
+height: 30px;
+width: 190px;
+border-radius: 5px;
+line-height: 30px;
+padding-left: 10px;
+-webkit-app-region: no-drag; 
+background:var(--btn-bgc) url(../imgs/icon10.png) no-repeat;
+background-position-x: 180px;
+background-position-y: center;
+position: relative;
+display: inline-block;
+}
+
+.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: relative;
+color: var(--text-color);
+right: 10px;
+font-size: var(--size2);
+margin: 0;
+padding: 0;
+height: 25px;
+width: 200px;
+border-radius: 5px;
+z-index: 100;
+}
+
+.dropdown-content li {
+display: block;
+background-color: var(--btn-bgc);
+padding-left: 20px;
+-webkit-app-region: no-drag; 
+
+}
+.dropdown-content li:first-child{
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+}
+.dropdown-content li:last-child{
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.dropdown-content li:hover {
+background-color: var(--btn-bgc-hover);
+color: var(--white);
+
+}
+
+
+.drop-box:hover .dropdown-content {
+display: block;
+}
+
+
+
+
+.timeAdd{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    background: var(--btn-bgc); 
+    border-radius: var(--border-radius);
+    line-height: 20px;
+    position: relative;
+    text-align: left;
+    -webkit-app-region: no-drag; 
+}
+ .timeAdd img{
+    position: absolute;
+    right: 10px;
+    width: 10px;
+}
+.timeAdd .reduce{
+    top: 17px;
+}

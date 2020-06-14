@@ -1,0 +1,95 @@
+/* 初始浏览器默认样式 */
+body {
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+
+hr{
+    width: 80%;
+    min-width: 750px;
+    margin-top: 33px;
+}
+
+html::-webkit-scrollbar{width:0;}
+
+/* 首页内容 */
+
+.content {
+    border-radius: var(--border-radius2);
+    -webkit-app-region: drag; 
+     
+}
+
+.content-title {
+    font-size: var(--size4);
+    text-align: center;
+    color: var(--content-title);
+    margin-top: 47px;
+}
+
+
+.conten-select {
+    min-width: 750px;
+    width: 80%;
+    height: 250px;
+    margin: 100px 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.conten-select div{
+    width: 45%;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-app-region: no-drag; 
+
+}
+.conten-select div:hover{
+    background-color: var(--hover);
+}
+
+.conten-select img{
+    margin-top: 47px;
+}
+
+.conten-select p{
+    font-size: var(--size5);
+    margin-top: var(--size1);
+    color: var(--content-text);
+}
+
+
+/* 首页底部 */
+.foot{
+    width: 80%;
+    margin: 115px 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--size1);
+    color: var(--content-text);
+}
+.foot-link{
+    -webkit-app-region: no-drag; 
+}
+.foot-iconGroup{
+    display: flex;
+}
+.foot-iconGroup div{
+    text-align: center;
+    margin: 0px 10px;
+    padding: 2px;
+    border-radius: 10px;
+    -webkit-app-region: no-drag; 
+}
+
+.foot-iconGroup div:hover{
+    background-color: var(--hover);
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/Watermaket.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部 -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>Watermaket</li>
+                <li>Subtitle</li>
+                <li>Audio</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!-- 中间内容区 -->
+        <div class="cut-f-content">
+            <div class="Watermaket">
+                <!-- 左边图片 -->
+                <div class="Watermaket-img">
+                    <p>Original Preview</p>
+                    <div><img src="../imgs/img7.svg" /></div>
+                    
+                    <p>Output Preview</p>
+                    <div>
+                        <img src="../imgs/img8.svg" />
+                        <div class="progress">
+                            <img src="../imgs/icon62.svg" />
+                            <img src="../imgs/icon63.svg" />
+                            <img src="../imgs/icon64.svg" />
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon67.svg" />
+                            <div class="scroll scroll2" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon69.svg" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 右边操作 -->
+                <div class="Watermaket-oper">
+                    <div class="one">
+                        <img  src="../imgs/icon14.png"/>None Watermaket
+                    </div>
+                    <div class="two">
+                        <img  src="../imgs/icon14.png"/>Text Type<br/>
+                        <input type="text" value="I’m watermaket"/> <img  src="../imgs/icon72.svg"/>
+                    </div>
+                    <div class="three">
+                        <img  src="../imgs/icon14.png"/>Image Type<br/>
+                        <input type="text"/> <img  src="../imgs/icon73.svg"/>
+                    </div>
+                    <div class="four">
+                        <p>Transparency:   <span>80 / 100</span></p>
+
+                        <!-- 进度条 -->
+                        <div class="scroll" id="scroll">
+                            <div class="bar" id="bar">
+                            </div>
+                            <div class="mask" id="mask"></div>
+                        </div>
+                        <div class="button1 res">Reset</div>
+                        <div class="button1 all">Apply to All</div>
+                        
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+        <script src="../js/view/Components.js"></script>
+</body>
+</html>

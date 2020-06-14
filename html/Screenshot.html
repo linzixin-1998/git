@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/Screenshot.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部 -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>Watermaket</li>
+                <li>Subtitle</li>
+                <li>Audio</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="cut-f-content">
+            <div class="Screenshot">
+                <!-- 左边图片区域 -->
+                <div class="Screenshot-img">
+                    <div class="Screenshot-img-one">
+                        <img  src="../imgs/img8.svg"/>
+                        <!-- 名字 -->
+                        <div class="name">Output Preview</div>
+                        <!-- 视频foot -->
+                        <div class="progress">
+                            <img src="../imgs/icon62.svg" />
+                            <img src="../imgs/icon63.svg" />
+                            <img src="../imgs/icon64.svg" />
+                            <img src="../imgs/icon67.svg" />
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <!-- <img src="../imgs/icon65.svg" /> -->
+
+                            <img src="../imgs/icon79.svg" />
+                            <img src="../imgs/icon80.svg" />
+                        </div>
+                    </div>
+                    <div class="Screenshot-img-two">
+                        <div class="cut"></div>
+                        <div class="time">
+                            <div>Start Time :
+                                <div class="timeAdd">
+                                    <span  id="time">00:00:04</span>
+                                    
+                                    <img onclick="T(event)" id="reduce" class="reduce" src="../imgs/icon10.png"/>
+                                    <img onclick="T(event)" class="add" id="add" src="../imgs/icon52.png"/>
+                                </div>
+                            </div>
+                            <div>End Time :
+                                <div class="timeAdd">
+                                    <span  id="time">00:00:04</span>
+                                    
+                                    <img onclick="T(event)" id="reduce" class="reduce" src="../imgs/icon10.png"/>
+                                    <img onclick="T(event)" class="add" id="add" src="../imgs/icon52.png"/>
+                                </div>
+                            </div>
+                            <div>Duration :
+                                <input type="text" value="00:00:04" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右边操作区域 -->
+                <div class="Screenshot-oper">
+
+                    <div class="Screenshot-one">
+                            <div>Picture Format:
+                                
+                                <ul class="drop-box">
+                                    <li class="dropbtn">Smart Fit</li>
+                                    <ul class="dropdown-content">
+                                      <li>MP4</li>
+                                      <li>MP4</li>
+                                    </ul >
+                                </ul>
+                            </div>
+                            <div>Image Size:
+
+                                <ul class="drop-box">
+                                    <li class="dropbtn">Arial</li>
+                                    <ul class="dropdown-content">
+                                      <li>MP4</li>
+                                      <li>MP4</li>
+                                    </ul >
+                                </ul>
+                            </div>
+                            <div>Picture Count:
+                                <div class="timeAdd">
+                                    <span  id="time" class="time">00:00:04</span>
+                                    
+                                    <img onclick="T(event)" id="reduce" class="reduce" src="../imgs/icon10.png"/>
+                                    <img onclick="T(event)" class="add" id="add" src="../imgs/icon52.png"/>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+    <script src="../js/view/Components.js"></script>
+    <script src="../js/view/convert.js"></script>
+</body>
+</html>

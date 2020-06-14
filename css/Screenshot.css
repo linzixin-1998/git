@@ -1,0 +1,273 @@
+
+body,html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+}
+
+
+.cut-f{
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-app-region: drag; 
+    justify-content: space-around;
+}
+
+/* 头部 */
+.cut-f-head{
+    height: 50px;
+    width: 100%;
+}
+.cut-f-head ul{
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    font-size: var(--size3);
+}
+.cut-f-head li{
+    flex: 1;
+    line-height: 50px;
+    text-align: center;
+    font-size: var(size3);
+    color: var(--content-title);
+}
+
+
+/* 内容 */
+.cut-f-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bgc);
+}
+.cut-f-content .Screenshot{
+    display: flex;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    font-size: var(--size2);
+    margin: auto;
+}
+.Screenshot-img{
+    width: 430px;
+    margin-right: 30px;
+    margin-top: 30px;
+
+}
+
+.Screenshot-img .Screenshot-img-one{
+    height: 240px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+.Screenshot-img-one img{
+    height: 100%;
+    width: 100%;
+}
+.Screenshot-img-one .name{
+    position: absolute;
+    height: 20px;
+    top: -20px;
+    font-size: var(--size2);
+    color: var(--text-color);
+}
+.Screenshot-img-one .progress{
+    position: absolute;
+    height: 30px;
+    bottom: -30px;
+    width: 100%;
+}
+.progress img{
+    width: 10px;
+    margin-left: 10px;
+
+}
+.progress img:nth-child(2){
+    width: 15px;
+}
+
+.progress .scroll{
+    width: 60px;
+    height: 3px;
+    background-color: var(--Scroll-bgc2);
+    margin-bottom: 13px;
+}
+
+.progress .scroll .bar{
+    background: url(../imgs/icon66.png) no-repeat center;
+    bottom: -8px;
+}
+.progress .scroll .mask{
+    height: 3px;
+    background-color: var(--Scroll-bgc1);
+}
+
+.progress img:nth-child(6){
+    width: 15px;
+
+    float: right;
+}
+.progress img:nth-child(7){
+    width: 15px;
+
+    float: right;
+}
+
+
+
+.Screenshot-img .Screenshot-img-two{
+    height: 240px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.Screenshot-img-two .cut{
+    height: 100px;
+}
+.Screenshot-img-two .time{
+    width: 240px;
+}
+.Screenshot-img-two .time > div{
+    text-align: right;
+    margin-bottom: 5px;
+}
+.Screenshot-img-two .time input{
+    height: 30px;
+    width: 100px;
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    color: var(--text-color);
+    font-size: var(--size3);
+    -webkit-app-region: no-drag; 
+}
+.Screenshot-img-two .timeAdd{
+    height: 30px;
+    width: 100px;
+    padding: 0;
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    margin-left: 20px;
+    margin-left: 20px;
+    font-size: var(--size3);
+    color: var(--text-color);
+    -webkit-app-region: no-drag; 
+    line-height: 30px;
+}
+.timeAdd > .reduce{
+    bottom: 4px;
+}
+.timeAdd > .add{
+    top: 6px;
+}
+.Screenshot-oper{
+    width: 362px;
+    height: 540px;
+}
+.Screenshot-oper > div{
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: size3;
+    color: var(--video-color);
+    text-align: right;
+}
+
+.Screenshot-oper >  div > div  input{
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--text-color);
+    font-size: var(--size3);
+   
+}
+.Screenshot-oper >  div > div{
+    margin-bottom: 10px;
+}
+.Screenshot-oper .Screenshot-one{
+    margin-top: 30px;
+    height: 510px;
+    -webkit-app-region: no-drag; 
+}
+.Screenshot-one .drop-box{
+    height: 30px;
+    width: 190px;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--text-color);
+    font-size: var(--size3);
+    text-align: left;
+}
+.drop-box .dropdown-content{
+    position: absolute;
+    left: 0;
+}
+.Screenshot-one > div:nth-child(1){
+    margin-top: 30px;
+}
+.Screenshot-one .timeAdd{
+    width: 190px;
+    height: 30px;
+    color: var(--text-color);
+    font-size: var(--size3);
+    line-height: 30px;
+    padding: 0 0 0 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+/* 底部 */
+.cut-f-foot{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--white);
+}
+
+.cut-f-foot .button1{
+    display: inline-block;
+    font-size: var(--size3);
+    height: 35px;
+    width: 120px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+    -webkit-app-region: no-drag; 
+}
+
+.cut-f-foot .button1:nth-child(3){
+    background-image: linear-gradient(var(--jb-bgc1), var(--jb-bgc2));
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+/* add组件 */

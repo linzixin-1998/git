@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/Crop.css" rel="stylesheet">
+    <link href="../css/Components.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部 -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>Watermaket</li>
+                <li>Subtitle</li>
+                <li>Audio</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!--  -->
+        <div class="cut-f-content">
+            <div class="Crop">
+                <div class="Crop-img">
+                    <p>Original Preview</p>
+                    <div><img src="../imgs/img4.png" /></div>
+                    
+                    <p>Output Preview</p>
+                    <div>
+                        <img src="../imgs/img4.png" />
+                        <div class="progress">
+                            <img src="../imgs/icon62.svg" />
+                            <img src="../imgs/icon63.svg" />
+                            <img src="../imgs/icon64.svg" />
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon67.svg" />
+                            <div class="scroll scroll2" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon69.svg" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Crop-oper">
+                    <div class="Rotation">
+                        <p>Rotation</p>
+                        <div class="first">
+                            
+                            <img src="../imgs/icon56.svg" />
+                        </div>
+                        <div>
+                            <img src="../imgs/icon57.svg" />
+                        </div>    
+                        <div>
+                            <img src="../imgs/icon58.svg" />
+                        </div>
+                        <div>
+                            <img src="../imgs/icon59.svg" />
+                        </div>
+                    </div>
+                    <div>
+                        <p>Original Size</p>
+                        <img src="../imgs/icon60.svg"/>
+                        <span>320 * 700</span>
+                    </div>
+                    <div>
+                        <p>Crop Area Size</p>
+                        <input class="first" value="320"/>
+                        <img src="../imgs/icon61.svg" />
+                        <input value="700">
+                    </div>
+                    <div>
+                        <p>Aspect Ratio</p>
+                        <!-- <div class="pullDown1">Original Resolution</div> -->
+                        <!-- <select class="select">
+                            <option value="MP4">H.264</option>
+                            <option value="MP4">H.264</option>
+                        </select> -->
+                        <ul class="drop-box">
+                            <li class="dropbtn">Original Resolution</li>
+                            <ul class="dropdown-content">
+                              <li>Original Resolution</li>
+                              <li>Original Resolution</li>
+                            </ul >
+                            </ul>
+                        <div class="button1">Reset</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+    <script src="../js/view/Components.js"></script>
+</body>
+</html>

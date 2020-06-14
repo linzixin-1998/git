@@ -1,0 +1,459 @@
+
+
+/* 初始化元素样式 */
+html{
+    height: 100%;
+
+}
+html::-webkit-scrollbar{width:0;}
+body{
+    margin: 0px;
+    color: var(--content-text);
+    height: 100%;
+    -webkit-app-region: drag; 
+}
+
+
+/* 头部 */
+.head {
+    min-width: 1200px;
+    width: 100%;
+    height: 85px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: var(size3);
+    background-color: var();
+    position: fixed;
+    top: 30px;
+    z-index: 100;
+    background-color: var(--white);
+    -webkit-app-region: no-drag; 
+
+}
+.right {
+    position: absolute;
+    right: 5%;
+}
+.right img{
+    margin-left: 20px;
+}
+
+
+.head-select{
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.head-select div{
+    display: inline-block;
+}
+
+.head-select-left{
+    position: absolute;
+    left: 5%;
+}
+
+.head-select-left div{
+    display: inline-block;
+    height: 25px;
+    padding: 0 5px;
+    border-radius: var(--border-radius);
+}
+.head-select-left div:hover{
+    background-color: var(--btn-bgc);
+}
+
+.head-select-left div img{
+    margin: 0 10px;
+}
+
+.head-select-center{
+    width: 280px;
+    line-height: 30px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+
+}
+.head-select-center div{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.head-select-center div:nth-child(1):hover{
+    background-color: var(--btn-bgc-hover);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    color: var(--white);
+}
+.head-select-center div:nth-child(2):hover{
+    background-color: var(--btn-bgc-hover);
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    color: var(--white);
+}
+
+
+.head-select-right{
+    position: absolute;
+    right: 5%;
+    height: 100%;
+
+}
+
+
+.head-select-right > .drop-box{
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    background-color:   var(--btn-bgc);
+    border-radius: var(--border-radius);
+    color: var(--content-text);
+    font-size: var(--size2);
+    text-align: left;
+    margin: 0;
+    -webkit-app-region: no-drag;
+    background: var(--btn-bgc) url(../imgs/icon10.png) no-repeat;
+    background-position-x: 140px;
+    background-position-y: center;
+}
+
+.dropdown-content li{
+    width: 140px;
+    height: 25px;
+}
+.head-select-right > span{
+    float: left;
+    margin-right: 20px;
+}
+/* .select{
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    background-color:   var(--btn-bgc);
+    border-radius: var(--border-radius);
+    padding: 0 10px;
+    margin-left: 20px;
+    color: var(--content-text);
+    font-size: var(--size2);
+    outline: none;
+    border: none;
+} */
+
+
+
+
+/* 内容 */
+.content{
+    position: relative;
+    bottom: 60px;
+    top: 115px;
+    min-width: 1200px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--btn-bgc);
+
+
+}
+
+/* 未添加视频 */
+.empty{
+    text-align: center;
+    padding-top: 155px;
+    display: none;
+}
+.empty p{
+    margin-top: 55px;
+}
+
+
+/* 添加视频 */
+
+.videoList{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+
+
+}
+
+/* 视频列表 */
+.item{
+    display: flex;
+    -webkit-app-region: no-drag; 
+}
+
+.item .itemSelect{
+    line-height: 224px;
+    width: 30px;
+
+    position: relative;
+    background: url(../imgs/icon34.png) no-repeat center ;
+    
+}
+.item .itemSelect:hover{
+    background: url(../imgs/icon33.png) no-repeat center ;
+}
+
+
+.videoItem{
+    width: 90%;
+    min-width: 1140px;
+    height: 194px;
+    margin: 15px 0;
+    position: relative;
+    background-color: var(--video-bgc);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-app-region: no-drag; 
+}
+
+.videoItem-bgc-2{
+    background-color: var(--white);
+}
+
+
+.videoItem-video{
+    width: 198px;
+    height: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: var(--videoImg-bgc);
+    border-radius:  var(--border-radius);
+
+}
+.videoItem-video img{
+    width: 160px;
+    height: 110px;
+}
+
+/* 每个视频项的中间区域 */
+.videoItem-operation{
+    width: 742px;
+    height: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.videoItem-operation > div{
+    margin-top: 10px;
+}
+.videoItem-operation .videoName{
+    height: 17px;
+    font-size: var(size3);
+    color: var(--video-color);
+    margin-top: 20px;
+}
+
+.videoSource{
+    height: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.videoSource-S{
+    width: 350px;
+    height: 100%;
+    border: 1px solid var(--content-text);
+    border-radius:  var(--border-radius);
+}
+.videoSource-S > div:nth-child(1){
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: var(--size2);
+    color: var(--text-color);
+}
+
+.videoSource-S > div:nth-child(2){
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 12px;
+
+    font-size: var(--size1);
+    color: var(--text-color);
+}
+.videoSource-S > div:nth-child(2) img{
+    position: relative;
+    top: 1px;
+}
+.videoSource-S > div:nth-child(2) span{
+    margin-right: 22px;
+}
+
+
+
+.videoSource-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.videoSelect .fonsize{
+font-size: var(--size2);
+}
+
+.select2{
+    width: 140px;
+    height: 25px;
+    line-height: 25px;
+    background-color:   var(--btn-bgc);
+    border-radius: var(--border-radius);
+    padding: 0 10px;
+    margin-right: 20px;
+    margin-left: 7px;
+    color: var(--content-text);
+    font-size: var(--size2);
+    outline: none;
+    border: none;
+}
+
+.videoSelect > .videoSelect-right{
+    position: relative;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: var(--border-radius);
+    float: right;
+    background-color:   var(--btn-bgc);
+
+}
+.videoSelect > span > img{
+    position: absolute;
+    top: 4px;
+}
+
+.videoSelect > span > img:nth-child(1){
+right: 10px;
+}
+
+.videoSelect > span > img:nth-child(2){
+    left: 10px;
+}
+
+.videoSelect div span{
+    float: left;
+}
+
+
+
+
+.videoOper{
+    height: 25px;
+    width: 100%;
+    font-size: var(--size1);
+    background-color:   var(--btn-bgc);
+    border-radius: var(--border-radius);
+    line-height: 25px;
+
+}
+
+.videoOper > span{
+    margin-right: 6px;
+    color: var(--text2-color);
+
+}
+
+.videoOper > span:hover{
+    color: var(--text3-color);
+}
+
+.videoOper > img{
+    margin-left: 6px;
+
+    position: relative;
+    top: 3px;
+}
+
+.videoItem-btn{
+    width: 120px;
+    height: 35px;
+    font-size: var(size3);
+    line-height: 35px;
+    color: var(--white);
+    margin-right: 28px;
+    text-align: center;
+    background-color: var(--content-title);
+    border-radius:  var(--border-radius);
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+
+/* 底部 */
+.foot{
+    background-color: var(--white);
+    min-width: 1200px;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: var(--size2);
+    position: fixed;
+    color: var(--text-color);
+    bottom: 0;
+}
+
+.foot div{
+    display: inline-block;
+
+}
+.foot-left{
+    position: absolute;
+    left: 5%;
+}
+
+.Output{
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    padding-left: 10px;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+}
+
+.foot-left .foot-btn{
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: var(--size2);
+}
+
+.foot-right {
+    position: absolute;
+    right: 5%;
+}
+.foot-right div:nth-child(1){
+    margin-left: 75px;
+}
+.foot-right div img {
+    margin: auto 20px;
+    -webkit-app-region: no-drag; 
+}
+
+.foot-btn2 {
+    width: 150px;
+    height: 40px;
+    color: var(--white);
+    margin-left: 30px;
+    background-image: linear-gradient(var(--jb-bgc1), var(--jb-bgc2));
+    border-radius: var(--border-radius);
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/Components.css" rel="stylesheet">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/Effect.css" rel="stylesheet">
+    <title>cut function</title>
+</head>
+<body>
+    <!-- 窗口顶部 -->
+    <div class="windowHead">
+        <img class="pageIcon" src="../imgs/min.svg">
+        <img class="pageIcon" src="../imgs/max.svg">
+        <img class="pageIcon" src="../imgs/close.svg">
+    </div>
+
+    <div class="cut-f">
+        <!-- 头部tab -->
+        <div class="cut-f-head">
+            <ul>
+                <li>Crop</li>
+                <li>Effect</li>
+                <li>Watermaket</li>
+                <li>Subtitle</li>
+                <li>Audio</li>
+                <li>3D</li>
+                <li>Screenshot</li>
+            </ul>
+        </div>
+        <!-- 内容区  -->
+        <div class="cut-f-content">
+            <div class="Effect">
+                <!-- 中间的左边图片区 -->
+                <div class="Effect-img">
+                    <p>Original Preview</p>
+                    <div><img src="../imgs/img7.svg" /></div>
+                    
+                    <p>Output Preview</p>
+                    <div>
+                        <img id="effectImg" src="../imgs/img8.svg" />
+                        <div class="progress">
+                            <img src="../imgs/icon62.svg" />
+                            <img src="../imgs/icon63.svg" />
+                            <img src="../imgs/icon64.svg" />
+                            <div class="scroll" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon67.svg" />
+                            <div class="scroll scroll2" id="scroll">
+                                <div class="bar" id="bar">
+                                </div>
+                                <div class="mask" id="mask"></div>
+                            </div>
+                            <img src="../imgs/icon69.svg" />
+                        </div>
+                    </div>
+                    
+                </div>
+                 <!-- 中间的右边操作区 -->
+                <div class="Effect-oper">
+                    <!-- 右边第一行 -->
+                    <div class="Effect-one">
+                             <div class="Effect-one-item">
+                                 <div>Brightness:</div>
+                                 <div>
+                                    <div class="scroll" id="scroll">
+                                        <div class="bar" id="bar">
+                                        </div>
+                                        <div class="mask" id="mask"></div>
+                                    </div>
+                                 </div>
+                                 <div>0</div>
+                             </div>
+                             <div class="Effect-one-item">
+                                <div>Brightness:</div>
+                                <div>
+                                   <div class="scroll" id="scroll">
+                                       <div class="bar" id="bar">
+                                       </div>
+                                       <div class="mask" id="mask"></div>
+                                   </div>
+                                </div>
+                                <div>0</div>
+                            </div>
+                            <div class="Effect-one-item">
+                                <div>Brightness:</div>
+                                <div>
+                                   <div class="scroll" id="scroll">
+                                       <div class="bar" id="bar">
+                                       </div>
+                                       <div class="mask" id="mask"></div>
+                                   </div>
+                                </div>
+                                <div>0</div>
+                            </div>
+
+                    </div>
+                     <!-- 右边第二行 -->
+                    <div class="Effect-two">
+                        <div><span>Deinterlace:</span>
+                            <ul class="drop-box">
+                                <li class="dropbtn">Odd Interpolate</li>
+                                <ul class="dropdown-content">
+                                  <li>None</li>
+                                  <li>Repeat Odd Field</li>
+                                  <li>Repeat Even Field</li>
+                                  <li>Odd Interpolate</li>
+                                  <li>Even Interpolate</li>
+                                </ul >
+                              </ul>
+                        </div>
+                        <div><span>Auto Enhance:</span><img src="../imgs/icon13.png" /></div>
+                    </div>
+                    <!-- 右边第三行 -->
+                    <div class="Effect-three">
+                        <div class="Effect-three-imgGroup">
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect1.svg" />
+                                <p>None</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect2.svg" />
+                                <p>Holiday</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect3.svg" />
+                                <p>September</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect4.svg" />
+                                <p>Snow</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect5.svg" />
+                                <p>Aibao</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect6.svg" />
+                                <p>Chocolate</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect7.svg" />
+                                <p>BWFilter</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect8.svg" />
+                                <p>SimpleEf</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect9.svg" />
+                                <p>Retro</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect10.svg" />
+                                <p>Glow</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect11.svg" />
+                                <p>RainDrop</p>
+                            </div>
+                            <div class="img-item">
+                                <img onclick="imgItemClick(event)"  src="../imgs/effect12.svg" />
+                                <p>FuzzyImg</p>
+                            </div>
+
+                        </div>
+                        <div class="Effect-three-foot">
+                            <div class="button1 res">Reset</div>
+                            <div class="button1 all">Apply to All</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+        <!-- 底部按钮区 -->
+        <div class="cut-f-foot">
+            <div class="button1">Reset All</div>
+            <div class="button1">Close</div>
+            <div class="button1">Save</div>
+        </div>
+    </div>
+    <script src="../js/view/convert.js"></script>
+    <script src="../js/view/Components.js"></script>
+    <script src="../js/view/Effect.js"></script>
+</body>
+</html>

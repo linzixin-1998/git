@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/layout.css" rel="stylesheet">
+    <link href="../css/register.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="head">
+        <div class="head-box">
+            <div class="head-title"><img src="../imgs/logo.png" /><span id="set">Setting</span></div>
+            <div>
+                <button class="head-btn btn-close"></button>
+            </div>
+        </div>
+    </div>
+    <div class="reg-box set">
+        <div>
+            <span id="text-lang">Language</span>
+            <div class="dropup">
+                <button id="lang" class="drop-box" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <input id="input-lang" type="text" class="metadata-input" disabled><div class="triangle"></div>
+                </button>
+                <ul id="lang-selector" class="dropdown-menu">
+                    <li data-l="en">English</li>
+                    <li data-l="ja">日本語</li>
+                    <li data-l="hk">繁体中文</li>
+                    <li data-l="de">Deutsch</li>
+                    <li data-l="fr">Le français</li>
+                </ul>
+            </div>
+        </div>
+<!--        <div>-->
+<!--            <button id="upgrade-btn" class="col-btn">Upgrade Version</button>-->
+<!--        </div>-->
+    </div>
+</div>
+
+<script src="../js/view/layout.js"></script>
+<script src="../js/controller/layout.js"></script>
+<script src="../js/view/set.js"></script>
+</body>
+</html>

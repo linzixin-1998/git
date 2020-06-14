@@ -1,0 +1,255 @@
+
+body,html{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+}
+
+
+.cut-f{
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-app-region: drag; 
+    justify-content: space-around;
+}
+
+/* 头部 */
+.cut-f-head{
+    height: 50px;
+    width: 100%;
+}
+.cut-f-head ul{
+    list-style: none;
+    display: flex;
+    padding-left: 20px;
+    font-size: var(--size3);
+}
+.cut-f-head li{
+    flex: 1;
+    line-height: 50px;
+    text-align: center;
+    font-size: var(size3);
+    color: var(--content-title);
+}
+
+
+/* 内容 */
+.cut-f-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bgc);
+}
+.cut-f-content .SanD{
+    display: flex;
+    justify-content: center;
+    height: 570px;
+    width: 100%;
+    font-size: var(--size2);
+    margin: auto;
+}
+.SanD-img{
+    width: 430px;
+    background-color: var(--videoImg-bgc);
+    margin: 30px 0;
+    margin-right: 30px;
+    position: relative;
+}
+
+.SanD-img > img{
+    width: 430px;
+    margin-top: 135px;
+}
+.progress{
+    height: 20px;
+    width: 100%;
+    background-color: var(--btn-bgc);
+    vertical-align: center;
+    position: absolute;
+    bottom: -20px;
+}
+
+.progress img{
+    width: 10px;
+    margin-left: 10px;
+
+}
+.progress img:nth-child(2){
+    width: 15px;
+}
+
+.progress .scroll{
+    width: 220px;
+    height: 3px;
+}
+
+.progress .scroll .bar{
+    background: url(../imgs/icon66.png) no-repeat center;
+    bottom: -8px;
+}
+
+.progress img:nth-child(7){
+    width: 15px;
+
+}
+.progress .scroll2{
+    width: 50px;
+    height: 3px;
+}
+
+
+/* 中间右边布局 */
+.SanD-oper{
+    width: 362px;
+}
+.SanD-oper > div{
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: size3;
+    color: var(--video-color);
+    
+}
+
+.SanD-oper  p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.SanD-oper .scroll{
+    height: 4px;
+    -webkit-app-region: no-drag; 
+    background-color: var(--Scroll-bgc2);
+    width: 322px;
+    margin-left: 20px;
+}
+.SanD-oper .scroll .bar{
+    background: url(../imgs/icon66.png) no-repeat center;
+    bottom: -8px;
+}
+
+.scroll .mask{
+    height: 4px;
+    background-color: var(--Scroll-bgc1);
+}
+/* 右边第一行 */
+.SanD-oper .SanD-one{
+    margin-top: 30px;
+    height: 60px;
+
+}
+.SanD-oper img{
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    -webkit-app-region: no-drag; 
+}
+
+
+
+/* 右边第二行 */
+
+.SanD-oper .SanD-two{
+    height: 100px;
+    position: relative;
+
+}
+.SanD-two > .drop-box{
+    height: 30px;
+    width: 312px;
+    background-color: var(--btn-bgc);
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 30px;
+    background-position-x: 302px;
+    
+}
+.drop-box .dropdown-content{
+    height: 30px;
+    width: 322px;
+    position: absolute;
+    left: 0;
+}
+/*右边第三行 */
+.SanD-oper .SanD-three{
+    height: 163px;
+    position: relative;
+
+}
+.SanD-oper .SanD-three .SanD-three-second{
+    margin-left: 20px;
+    font-size: var(--size2);
+    color: var(--text-color);
+}
+.SanD-three-second p{
+    margin-top: 10px;
+}
+
+
+/* 右边第四行 */
+.SanD-oper .SanD-four{
+    height: 175px;
+    position: relative;
+}
+.SanD-four > div{
+    margin-left: 20px;
+}
+.SanD-four .mybar{
+    height: 20px;
+    width: 100%;
+}
+
+.SanD-four img{
+    width: 30px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    -webkit-app-region: no-drag; 
+}
+.SanD-four .button1{
+    background-color: var(--content-title);
+    width: 120px;
+    height: 35px;
+    color: var(--white);
+    position: absolute;
+    bottom: 20px;
+    font-size: var(--size3);
+}
+.res{
+    right: 150px;
+}
+.all{
+    right: 20px;
+}
+
+/* 底部 */
+.cut-f-foot{
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--white);
+}
+
+.cut-f-foot .button1{
+    display: inline-block;
+    font-size: var(--size3);
+    height: 35px;
+    width: 120px;
+    margin-right: 10px;
+    border-radius: var(--border-radius);
+    -webkit-app-region: no-drag; 
+}
+
+.cut-f-foot .button1:nth-child(3){
+    background-image: linear-gradient(var(--jb-bgc1), var(--jb-bgc2));
+    margin-right: 30px;
+}
